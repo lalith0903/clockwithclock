@@ -1,0 +1,77 @@
+
+    :root {
+        --bg-color: #ffffff;
+        --digit-bg: #eeeeee;
+        --clock-bg: #161616;
+        --clock-border: #2e2e2e;
+        --hand-color: #e0ff55;
+    }
+
+    [data-theme="dark"] {
+        --bg-color: #121212;
+        --digit-bg: #1e1e1e;
+        --clock-bg: #222222;
+        --clock-border: #444444;
+        --hand-color: #ffeb3b;
+    }
+    body {
+      margin: 0;
+      padding: 30px;
+      background: black;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center; /* centers horizontally */
+      align-items: center;   
+      
+    }
+    #grid-row {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .digit {
+      display: grid;
+      grid-template-columns: repeat(4, 0fr);
+      grid-template-rows: repeat(6, 0fr);
+      gap: 0.1rem;
+      /* justify-content: center; */
+    }
+
+    #grid-row  .digit:nth-child(2) {
+        margin-right: 2rem; /* or any gap size you want */
+    }
+
+    #grid-row  .digit:nth-child(4) {
+        margin-right: 2rem; /* or any gap size you want */
+    }
+
+    .clock {
+      position: relative; /* Add this line */
+      height: 3rem;
+      width: 3rem;
+      background: rgb(22, 22, 22);
+      border: 0.25rem solid rgb(46, 46, 46);
+      border-radius: 50%; /* Makes it a circle */
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+    }
+
+    .hand {
+      height: 0.1875rem;
+      background: rgb(224, 255, 85);
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      translate: 0% -50%;
+      width: 50%;
+      transform-origin: center left;
+      transition: transform 250ms ease;
+    }
+    /* .hand:nth-child(1) {
+      rotate: 180deg;
+    }
+    .hand:nth-child(2) {
+      rotate: 45deg;
+    } */
