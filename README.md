@@ -89,6 +89,7 @@ Follow these steps to run the project locally:
 ## 📸 Screenshots
 
 > *(Optional – add screenshots here)*
+<img width="1719" height="502" alt="image" src="https://github.com/user-attachments/assets/fcfb3f86-afb7-4c41-a2ee-18461430a571" />
 
 ```
 /screenshots/clock-preview.png
